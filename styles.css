@@ -1352,6 +1352,12 @@ html {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+.counseling-hero h1 {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 3rem;
+}
 .form-section {
   display: flex;
   justify-content: space-between;
@@ -1418,6 +1424,7 @@ html {
   background: #42045f;
   color: white;
   padding: 80px;
+  gap: 60px;
 }
 
 .counselor-left,
@@ -1437,14 +1444,17 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 12px;
 }
 
 .counselor-right i{
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .counselor-right h3{
   font-size: 24px;
+  margin: 0;
 }
 
 .counselor-right p {
@@ -1522,6 +1532,96 @@ html {
   border-radius: 12px;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px rgba(66, 4, 95, 0.1);
+}
+
+@media (max-width: 768px) {
+  /* HERO SECTION */
+  .counseling-hero {
+    height: 300px;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .counseling-hero h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  /* FORM SECTION */
+  .form-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .form-info,
+  .contact-form {
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  .form-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-info p {
+    font-size: 0.95rem;
+  }
+
+  /* COUNSELOR SECTION */
+  .counselor-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .counselor-left h2 {
+    font-size: 2rem;
+  }
+
+  .counselor-left p {
+    font-size: 1rem;
+  }
+
+  .counselor-right {
+    align-items: flex-start;
+  }
+
+  .counselor-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .counselor-right p {
+    font-size: 1rem;
+  }
+
+  .counselor-right button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  /* RESOURCES SECTION */
+  .resources-section {
+    padding: 40px 20px;
+  }
+
+  .resources-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .resources-section p {
+    font-size: 1rem;
+  }
+
+  .resources-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource-card {
+    width: 100%;
+    max-width: 340px;
+  }
 }
 
 
