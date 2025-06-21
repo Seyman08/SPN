@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Base Styles */
 body {
   margin: 0;
-  font-family: 'inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f7f7f8;
   color: #000;
 }
@@ -169,6 +169,21 @@ a {
   text-align: center;
 }
 
+.hero-content {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 /* .btn.join-now { */
   /* background-color: #3d0072;
   color: #f7f7f8;
@@ -182,6 +197,19 @@ a {
   padding: 80px 20px;
   background-color: #fff;
   text-align: center;
+}
+.purity-container{
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .purity-steps h2 {
@@ -244,6 +272,17 @@ a {
   color: #3d0072;
   margin-bottom: 50px;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .goals-intro {
@@ -269,9 +308,30 @@ a {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   height: 250px; /* force consistent height */
+  opacity: 0;
+  transform: scale(0.9);
+  animation: popIn 0.6s ease-out forwards;
 }
 
+.goal-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.goal-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.goal-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.goal-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .goal-item img {
   width: 50%;
   object-fit: cover;
@@ -323,19 +383,26 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
-  gap: 20px;
+}
+
+.vision -image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .vision-image img {
-  width: 100%;
-  border: solid 20px #3d0072;
-  border-right: #3d0072;
-  border-bottom: #3d0072;
+  width: 600px;
+  height: 400px;
+  display: block;
+  border-left: solid 20px #3d0072;
+  border-top: solid 13px #3d0072;
+  margin: 0px auto;
 }
 
 .vision-content {
   background-color: #3d0072;
-  padding: 30px;
+  padding: 50px;
   color: #f7f7f8;
   display: flex;
   flex-direction: column;
@@ -632,7 +699,7 @@ a {
 
 /* about us style */
 .about-hero {
-  background: url('/Assets/images/ABOUT US/about\ us\ hero.avif') no-repeat center center/cover;
+  background: url('/Assets/images/ABOUT/about-us-hero.avif') no-repeat center center/cover;
   height: 70vh;
   position: relative;
   display: flex;
