@@ -1273,6 +1273,7 @@ html {
 
 .radio-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 0.5rem;
   color: white;
@@ -1337,16 +1338,21 @@ html {
     padding: 8px 16px;
   }
 
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section h2,
+  .section h4,
+  .section p,
+  .getting-text h2,
+  .getting-text p {
+    text-align: center;
+  }
+
   .getting-started {
     flex-direction: column;
     margin-top: 2rem;
-  }
-
-  .getting-text h2,
-  .getting-text p,
-  .section h2,
-  .section h4 {
-    text-align: center;
   }
 
   .getting-text,
@@ -1357,6 +1363,7 @@ html {
   .form-section {
     flex-direction: column;
     padding: 1.5rem;
+    overflow-x: hidden;
   }
 
   .form-column {
@@ -1364,7 +1371,12 @@ html {
   }
 
   .form-column:first-child::after {
-    display: none; /* Hide the divider line on mobile */
+    display: none;
+  }
+
+  .radio-group {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
 
@@ -1401,7 +1413,17 @@ html {
   .getting-text ul li {
     font-size: 0.95rem;
   }
+
+  .getting-text ul {
+    padding-left: 1rem;
+  }
+
+  .mentorship-hero button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
 }
+
 
 
 /* counseling style */
