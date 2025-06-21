@@ -367,13 +367,13 @@ a {
   opacity: 0.8;
 }
 
-/* Optional: Add hover effect to goal item */
+
 .goal-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* 🎯 Vision Statement Section */
+/* Vision Statement Section */
 .vision-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -451,9 +451,9 @@ a {
 
 .testimonials {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .testimonial-card {
