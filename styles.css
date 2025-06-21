@@ -385,11 +385,6 @@ a {
   align-items: stretch;
 }
 
-.vision -image {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
 .vision-image img {
   width: 600px;
@@ -684,18 +679,35 @@ a {
   }
 
   .vision-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack vertically */
   }
 
-  .vision-image {
-    order: 1;
+  
+
+  .vision-image img {
+    width: 90%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border: solid 15px #3d0072; /* Adjust for smaller screen */
   }
 
   .vision-content {
-    order: 2;
+    padding: 30px 20px; /* Smaller padding */
+    text-align: center;
   }
 
+  .vision-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .vision-content p {
+    font-size: 0.95rem;
+  }
+
+  .vision-content .learn-more-btn {
+    font-size: 0.95rem;
+  }
 }
+
 
 /* about us style */
 .about-hero {
