@@ -1323,20 +1323,86 @@ html {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .getting-started,
-  .form-section {
-    flex-direction: column;
+  .mentorship-hero {
+    height: 70vh;
+    padding: 0 1rem;
   }
 
-  .form-column,
+  .ment-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .mentorship-hero button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .getting-started {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .getting-text h2,
+  .getting-text p,
+  .section h2,
+  .section h4 {
+    text-align: center;
+  }
+
   .getting-text,
   .getting-image {
     flex: 1 1 100%;
   }
+
+  .form-section {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .form-column {
+    flex: 1 1 100%;
+  }
+
   .form-column:first-child::after {
-    display: none;
+    display: none; /* Hide the divider line on mobile */
   }
 }
+
+@media (max-width: 480px) {
+  .ment-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .getting-text ul li {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* counseling style */
 
