@@ -1274,7 +1274,7 @@ html {
 .radio-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 0.5rem;
   color: white;
 }
