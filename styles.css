@@ -665,7 +665,10 @@ a {
     max-height: 500px;
   }
 
-  
+  .hero {
+    height: 50vh;
+  }
+
   .goals-grid {
     grid-template-columns: 1fr;
   }
