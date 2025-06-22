@@ -1363,12 +1363,12 @@ html {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .mentorship-hero {
-    height: 70vh;
+    height: 50vh;
     padding: 0 1rem;
   }
 
   .ment-hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .mentorship-hero button {
@@ -1674,8 +1674,8 @@ html {
 @media (max-width: 768px) {
   /* HERO */
   .counseling-hero {
-    height: 250px;
-    font-size: 1.8rem;
+    height: 50vh;
+    font-size:2rem;
     padding: 0 10px;
   }
 
