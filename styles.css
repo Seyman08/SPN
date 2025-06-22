@@ -462,7 +462,8 @@ a {
   color: #fff;
   padding: 30px 20px;
   border-radius: 16px;
-  width: 300px;
+  width: 100%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -706,14 +707,19 @@ a {
     font-size: 0.95rem;
   }
 
-   .testimonials {
+  .testimonials {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    padding: 0 10px; 
   }
 
   .testimonial-card {
-    width: 80%; 
-    max-width: 350px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
   }
 
   .success-stories h2 {
@@ -722,9 +728,15 @@ a {
 
   .testimonial-card .quote {
     font-size: 1rem;
-    line-height: 1.5;
   }
 
+  .testimonial-card h3 {
+    font-size: 1rem;
+  }
+
+  .testimonial-card .role {
+    font-size: 0.8rem;
+  }
 }
 
 
