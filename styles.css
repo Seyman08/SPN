@@ -1634,8 +1634,8 @@ html {
   box-shadow: 0 4px 8px rgba(66, 4, 95, 0.1);
 }
 
-
 @media (max-width: 768px) {
+  /* HERO */
   .counseling-hero {
     height: 250px;
     font-size: 1.8rem;
@@ -1647,65 +1647,72 @@ html {
     padding: 0 10px;
   }
 
+  /* FORM SECTION */
   .Cform-section {
     flex-direction: column;
-    padding: 40px 20px;
-    align-items: center;
+    padding: 30px 20px;
   }
 
-  .form-info, .contact-form {
-    width: 100%;
-    max-width: 500px; 
+  .form-info,
+  .contact-form {
     padding: 0;
-    margin-bottom: 2rem;
+    margin: 0 0 30px;
+    width: 100%;
   }
 
   .form-info h2 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .form-info p {
+    text-align: center;
     font-size: 0.95rem;
-  }
-
-  .counselor-section {
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 30px;
-    text-align: left;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .contact-form input,
   .contact-form select,
   .contact-form textarea {
-    max-width: 100%;
+    font-size: 1rem;
+    padding: 10px;
   }
 
   .contact-form button {
-    margin-top: 1rem;
+    width: fit-content;
+    align-self: flex-start;
+    margin-top: 10px;
   }
+
+  /* COUNSELOR SECTION */
+  .counselor-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
   .counselor-left h2 {
     font-size: 2rem;
   }
 
   .counselor-left p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  .counselor-right {
+    align-items: center;
   }
 
   .counselor-right h3 {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
 
   .counselor-right p {
-    font-size: 1rem;
+    font-size: 16px;
+    text-align: center;
   }
 
+  /* RESOURCES SECTION */
   .resources-section {
     padding: 40px 20px;
   }
@@ -1725,9 +1732,15 @@ html {
 
   .resource-card {
     width: 100%;
-    max-width: 90%;
+    max-width: 350px;
+  }
+
+  .resource-card i {
+    font-size: 20px;
+    padding: 12px 16px;
   }
 }
+
 
 
 
