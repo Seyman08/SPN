@@ -198,7 +198,8 @@ a {
   background-color: #fff;
   text-align: center;
 }
-.purity-container{
+
+.purity-container {
   opacity: 0;
   transform: translateX(-50px);
   animation: fadeInLeft 1s ease-out forwards;
@@ -1633,13 +1634,12 @@ html {
   box-shadow: 0 4px 8px rgba(66, 4, 95, 0.1);
 }
 
+
 @media (max-width: 768px) {
-  /* HERO SECTION */
   .counseling-hero {
-    height: 300px;
+    height: 250px;
     font-size: 1.8rem;
-    text-align: center;
-    padding: 20px;
+    padding: 0 10px;
   }
 
   .counseling-hero h1 {
@@ -1647,16 +1647,14 @@ html {
     padding: 0 10px;
   }
 
-  /* FORM SECTION */
-  .form-section {
+  .Cform-section {
     flex-direction: column;
     padding: 40px 20px;
   }
 
-  .form-info,
-  .contact-form {
-    padding: 20px;
-    margin-right: 0;
+  .form-info, .contact-form {
+    padding: 0;
+    margin: 0 0 2rem;
   }
 
   .form-info h2 {
@@ -1667,11 +1665,11 @@ html {
     font-size: 0.95rem;
   }
 
-  /* COUNSELOR SECTION */
   .counselor-section {
     flex-direction: column;
     padding: 40px 20px;
-    gap: 40px;
+    gap: 30px;
+    text-align: left;
   }
 
   .counselor-left h2 {
@@ -1679,33 +1677,23 @@ html {
   }
 
   .counselor-left p {
-    font-size: 1rem;
-  }
-
-  .counselor-right {
-    align-items: flex-start;
+    font-size: 1.1rem;
   }
 
   .counselor-right h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .counselor-right p {
     font-size: 1rem;
   }
 
-  .counselor-right button {
-    font-size: 14px;
-    padding: 10px 16px;
-  }
-
-  /* RESOURCES SECTION */
   .resources-section {
     padding: 40px 20px;
   }
 
   .resources-section h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .resources-section p {
@@ -1719,9 +1707,10 @@ html {
 
   .resource-card {
     width: 100%;
-    max-width: 340px;
+    max-width: 90%;
   }
 }
+
 
 
 /* contact page */
@@ -2469,4 +2458,4 @@ html {
   .walk-image-container {
     flex: 1;
   }
-}
+}}
