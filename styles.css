@@ -680,19 +680,17 @@ a {
   }
 
   .vision-grid {
-    grid-template-columns: 1fr; /* Stack vertically */
+    grid-template-columns: 1fr; 
   }
 
-  
-
   .vision-image img {
-    width: 90%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border: solid 15px #3d0072; /* Adjust for smaller screen */
+    width: 90%; 
+    height: auto; 
+    border: solid 15px #3d0072; 
   }
 
   .vision-content {
-    padding: 30px 20px; /* Smaller padding */
+    padding: 30px 20px; 
     text-align: center;
   }
 
@@ -707,6 +705,26 @@ a {
   .vision-content .learn-more-btn {
     font-size: 0.95rem;
   }
+
+   .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%; 
+    max-width: 350px;
+  }
+
+  .success-stories h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-card .quote {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
 }
 
 
@@ -722,7 +740,7 @@ a {
 }
 
 .about-hero-overlay {
-  background-color: rgba(0, 0, 0, 0.3); /* optional overlay */
+  background-color: rgba(0, 0, 0, 0.3); 
   width: 100%;
   min-height: 100%;
   display: flex;
