@@ -1378,7 +1378,7 @@ html {
   .radio-group {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.8rem;
+    gap: 0.6rem;
   }
 
   .submit-btn {
