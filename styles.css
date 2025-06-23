@@ -2155,8 +2155,8 @@ html {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  flex-direction: row; 
 }
-
 
 .testimonial-card {
   background: white;
@@ -2233,14 +2233,13 @@ html {
   }
 
   .testimonial-wrap {
-    display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .testimonial-text {
     order: -1; 
-    text-align: center;
     margin-bottom: 24px;
   }
 
@@ -2251,9 +2250,9 @@ html {
   }
 
   .page-container section + section {
-    margin-top: 40px;
+    margin-top: 30px;
   }
-}}
+}
 
 .leadership-section {
   padding: 80px 16px;
