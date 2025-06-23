@@ -768,7 +768,7 @@ a {
 
 /* about us style */
 .about-hero {
-  background: url('/Assets/images/ABOUT/about-us-hero.avif') no-repeat center center/cover;
+  background: url('/assets/images/ABOUT/about-us-hero.avif') no-repeat center center/cover;
   height: 70vh;
   position: relative;
   display: flex;
@@ -1174,7 +1174,7 @@ a {
 
 /* HERO */
 .mentorship-hero {
-  background: url('/Assets/images/MENTORSHIP/HERO.webp') no-repeat center center / cover;
+  background: url('/assets/images/MENTORSHIP/HERO.webp') no-repeat center center / cover;
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -1501,7 +1501,7 @@ html {
 /* counseling style */
 
 .counseling-hero {
-  background: url('/Assets/images/COUNSELING/counseling-hero.jpg') center/cover no-repeat;
+  background: url('/assets/images/COUNSELING/counseling-hero.jpg') center/cover no-repeat;
   height: 400px;
   display: flex;
   align-items: center;
@@ -2058,7 +2058,7 @@ html {
   
 
   padding: 64px 16px;
-  background-image: url('/Assets/images/TEAM/team hero.jpg');
+  background-image: url('/assets/images/TEAM/team hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
