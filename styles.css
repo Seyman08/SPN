@@ -2226,7 +2226,7 @@ html {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  . .testimonial-wrap {
+  .testimonial-wrap {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -2241,7 +2241,7 @@ html {
     text-align: left;
     padding-left: 40px;
   }
-  
+
   .design-wrap {
     flex-direction: row;
     align-items: center;
