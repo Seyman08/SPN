@@ -2232,7 +2232,11 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  
+  .testimonial-wrap {
+    flex-direction: flex-row;
+    align-items: center;
+    text-align: center;
+  }
 
   .testimonial-text {
     order: -1; 
