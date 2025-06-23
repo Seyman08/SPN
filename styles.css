@@ -692,11 +692,11 @@ a {
     padding: 0 20px;
     text-align: center;
   }
-  .goals-grid {
+ .goals-grid {
     grid-template-columns: 1fr;
   }
 
-  .goal-item {
+  .goal-item.scroll-zoom {
     flex-direction: column;
     height: auto;
   }
@@ -704,6 +704,19 @@ a {
   .goal-item img {
     width: 100%;
     height: 200px;
+  }
+
+  .goal-item div {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .goal-item p {
+    text-align: center;
+  }
+
+  .learn-more-btn {
+    align-self: center;
   }
 
   .vision-grid {
