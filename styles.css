@@ -2079,14 +2079,16 @@ html {
 
 /*  Meet Our Team */
 .team-subtitle {
-  color: #9333ea;
+  color: #3d0072;
   font-weight: 600;
   margin-bottom: 8px;
+  text-align: center;
 }
 .team-title {
   font-size: 2.5rem;
-  color: #7c3aed;
+  color: #3d0072;
   margin-bottom: 48px;
+  text-align: center;
 }
 .team-grid {
   display: grid;
