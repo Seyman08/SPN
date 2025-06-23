@@ -2226,6 +2226,10 @@ html {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .testimonial-section {
+    padding: 80px 40px;
+  }
   .testimonial-wrap {
     flex-direction: row;
     justify-content: space-between;
