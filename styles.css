@@ -2077,30 +2077,7 @@ html {
   z-index: 1;
 }
 
-
-/* 🔷 General Utilities */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 64px 16px;
-}
-.text-center {
-  text-align: center;
-}
-
-/* 🟣 Hero Banner */
-.hero-banner {
-  background: linear-gradient(to right, #4b0082, #7c3aed);
-  color: white;
-  text-align: center;
-  padding: 100px 16px;
-}
-.hero-banner h1 {
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-/* 👥 Meet Our Team */
+/*  Meet Our Team */
 .team-subtitle {
   color: #9333ea;
   font-weight: 600;
@@ -2207,7 +2184,7 @@ html {
   line-height: 1.4;
 }
 
-/* 🧭 Leadership Section */
+/*  Leadership Section */
 .leadership-section {
   background: #f3f4f6;
   padding: 64px 16px;
@@ -2248,7 +2225,7 @@ html {
   color: #ddd;
 }
 
-/* 🎨 Head of Design */
+/*  Head of Design */
 .design-section {
   padding: 64px 16px;
 }
