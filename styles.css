@@ -282,10 +282,11 @@ a {
   color: #3d0072;
   margin-bottom: 30px;
   text-transform: uppercase;
- opacity: 0;
+  opacity: 0;
   transform: translateY(-50px);
   transition: all 0.8s ease-out;
 }
+
 .section-title.scroll-up.visible {
   opacity: 1;
   transform: translateY(0);
