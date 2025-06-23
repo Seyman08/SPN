@@ -2053,53 +2053,30 @@ html {
 }
 
 /* Hero Section */
-.thero-section {
-  .thero-section {
-  
-
-  padding: 64px 16px;
-  background-image: url('/assets/images/TEAM/team hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 900px;
-}
-
-}
-
-.thero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.thero-content {
+.team-hero {
+  background: url(/assets/images/TEAM/team-hero.jpg) center/cover no-repeat;
+  height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
 }
 
-.thero-title {
-  background-color: #7c3aed;
-  padding: 24px;
-  border-radius: 8px;
+.team-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); 
 }
 
-.thero-title h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
+.team-hero h1 {
+  position: relative;
+  font-size: 3rem;
+  z-index: 1;
 }
 
-.thero-images {
-  display: none;
-  gap: 16px;
-}
-
-.thero-images img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
 
 /* Meet Our Team Section */
 .meet-team-section {
