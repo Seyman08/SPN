@@ -2212,6 +2212,11 @@ html {
   line-height: 1.4;
 }
 
+.page-container section + section {
+  margin-top: 64px;
+}
+
+
 
 /* Responsive */
 @media (min-width: 768px) {
@@ -2227,9 +2232,6 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .testimonial-section {
-    padding: 80px 40px;
-  }
   .testimonial-wrap {
     flex-direction: row;
     justify-content: space-between;
@@ -2253,5 +2255,9 @@ html {
   }
   .text, .design-image {
     flex: 1;
+  }
+
+  .page-container section + section {
+    margin-top: 40px;
   }
 }}
