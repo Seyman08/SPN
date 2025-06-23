@@ -2144,7 +2144,6 @@ html {
 
 
 /* 💬 Testimonials */
-/* ✨ Testimonial Section */
 .testimonial-section {
   background-color: #3b0a75;
   color: white;
@@ -2153,9 +2152,10 @@ html {
 
 .testimonial-wrap {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 40px;
   align-items: center;
+  justify-content: center;
 }
 
 .testimonial-card {
@@ -2233,7 +2233,8 @@ html {
   }
 
   .testimonial-wrap {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
   }
@@ -2261,3 +2262,130 @@ html {
     margin-top: 40px;
   }
 }}
+
+.leadership-section {
+  padding: 80px 16px;
+  background-color: #f9fafb;
+}
+
+.leadership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Left Image Column */
+.leadership-image {
+  flex: 1;
+  background-image: url("https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=600&h=800&fit=crop");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+/* Right Card Column */
+.leadership-card {
+  flex: 1;
+  background-color: #3d0072;
+  color: #f7f7f8;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leadership-small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c4b5fd;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.leadership-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.leadership-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.leadership-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.leadership-profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leadership-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.leadership-title {
+  font-size: 0.9rem;
+  color: #e0e7ff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .leadership-content {
+    flex-direction: column;
+  }
+
+  .leadership-image {
+    height: 300px;
+  }
+
+  .leadership-card {
+    padding: 32px 20px;
+  }
+
+  .leadership-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .leadership-card p {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+  .leadership-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .leadership-card p {
+    font-size: 0.9rem;
+  }
+
+  .leadership-profile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .leadership-name {
+    font-size: 0.9rem;
+  }
+
+  .leadership-title {
+    font-size: 0.8rem;
+  }
+}
