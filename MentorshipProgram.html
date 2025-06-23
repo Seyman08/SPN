@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mentorship Program</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+    <!-- 🧭 Navigation Bar -->
+  <header class="navbar">
+        <div class="container nav-container">
+            <!--left logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="/Assets/images/sexual-purity-logo.jpg" alt="sexual purity netwok logo">
+                </a>
+            </div>
+
+            
+            <!-- Hamburger Toggle -->
+            <input type="checkbox" id="menu-toggle" />
+            <label class="hamburger" for="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Center: Menu -->
+            <nav class="center-nav" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Program <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/CounselingSupport.html">Counseling Support</a></li>
+                            <li><a href="/MentorshipProgram.html">Mentorship Program</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#">More <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Learning Portal</a></li>
+                            <li><a href="/OurTeam.html">Team</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Events & Outreach</a></li>
+                            <li><a href="#">Blogs / Resources</a></li>
+                            <li><a href="#">Newsletter Signup</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Right: Button -->
+            <div class="nav-btn">
+                <a href="#" class="btn get-started">Get Started</a>
+            </div>
+     </div>
+ </header>
+    <!-- SECTION 1: HERO -->
+    <section class="mentorship-hero">
+        <div class="ment-hero">
+            <h1>MENTORSHIP PROGRAM</h1>
+            <button>BECOME A MENTOR</button>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PROGRAM OVERVIEW -->
+    <section class="section overview">
+        <h4>SEXUAL PURITY NETWORK</h4>
+        <h2>Program Overview</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas sed tempus urna. Sed risus ultricies tristique nulla aliquet enim tortor at. Dictum varius duis at consectetur. Faucibus in ornare quam viverra orci. Sapien pellentesque habitant morbi tristique senectus et netus. Nulla aliquet enim tortor at. Nunc consequat interdum varius sit.</p>
+    </section>
+
+    <!-- SECTION 3: GETTING STARTED -->
+    <section class="section getting-started">
+        <div class="getting-text">
+            <h2>Getting Started</h2>
+            <p>Ready to walk your purity journey with guidance and accountability? Our mentorship program pairs you with someone who understands your struggles and supports your growth — every step of the way.</p>
+            <p>Whether you're seeking healing, clarity, or discipline, this is a safe space to grow spiritually, emotionally, and relationally.</p>
+            <p>At Purity Network, mentorship is more than advice, it's a relationship rooted in truth, love, and transformation. Each mentor is trained to listen without judgment, share personal insights, and encourage you through practical steps.</p>
+            <p>By signing up, you'll gain a partner in your purity journey — someone committed to helping you overcome challenges, deepen your faith, and grow in purpose.</p>
+            <p><strong>As a mentee, you'll be able to:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i> Speak openly and confidently about your purity struggles.</li>
+                <li><i class="fa-solid fa-square-check"></i> Gain spiritual and emotional tools for lasting growth.</li>
+                <li><i class="fa-solid fa-square-check"></i> Discover God's design for sexual integrity in a personal way.</li>
+                <li><i class="fa-solid fa-square-check"></i> Set and achieve realistic purity goals with regular support.</li>
+            </ul>
+            <a href="#mentorship-form" class="submit-btn">Click here to Apply</a>
+
+        </div>
+        <div class="getting-image">
+            <img src="/Assets/images/MENTORSHIP/MENT-1.webp" alt="Mentorship Session" />
+        </div>
+    </section>
+
+    <!-- SECTION 4: HOW TO APPLY -->
+    <div class="how-to-apply">
+        <i class="fa-solid fa-circle-info"></i>
+        <h3>How To Apply</h3>
+    </div>
+
+    <!-- SECTION 5: FORM -->
+    <section id="mentorship-form" class="form-section">
+        <div class="form-column">
+            <h3>Apply As A Mentor</h3>
+            <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" />
+            </div>
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" />
+            </div>
+            <div class="form-group">
+                <label>Age Group *</label>
+                <select>
+                    <option>13-17</option>
+                    <option>18-25</option>
+                    <option>26-35</option>
+                    <option>36+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="text" placeholder="+234 (include your country code)" />
+            </div>
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="mentor-gender" /> Male</label>
+                    <label><input type="radio" name="mentor-gender" /> Female</label>
+                </div>
+            </div>
+            
+            <button class="submit-btn">APPLY AS A MENTOR  <i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+
+        <div class="form-column">
+            <h3>Apply As A Mentee</h3>
+            <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" />
+            </div>
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" />
+            </div>
+            <div class="form-group">
+                <label>Age Group *</label>
+                <select>
+                    <option>13-17</option>
+                    <option>18-25</option>
+                    <option>26-35</option>
+                    <option>36+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="text" placeholder="+234 (include your country code)" />
+            </div>
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="mentee-gender" /> Male</label>
+                    <label><input type="radio" name="mentee-gender" /> Female</label>
+                </div>
+            </div>
+           
+            <button class="submit-btn">APPLY AS A MENTEE  <i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="newsletter-section">
+            <div class="newsletter-left">
+                <h2><span>Walk With Us</span></h2>
+                <p>Subscribe to monthly updates with stories of transformation, encouragement, and purity resources.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-right">
+                <img src="/Assets/images/footer.jpeg" alt="People dining in nature" />
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Sexual Purity Network 2025</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
