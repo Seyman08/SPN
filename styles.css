@@ -1039,7 +1039,7 @@ a {
   border-radius: 50%;
 }
 
-.card.scroll-zoom{
+.scroll-effect{
   opacity: 0;
   transform: scale(0.9);
   transition: all 0.6s ease-out;
@@ -2078,17 +2078,22 @@ html {
 }
 
 /*  Meet Our Team */
-.team-subtitle {
-  color: #3d0072;
-  font-weight: 600;
-  margin-bottom: 8px;
-  text-align: center;
-}
+
 .team-title {
   font-size: 2.5rem;
   color: #3d0072;
   margin-bottom: 48px;
   text-align: center;
+}
+
+.team-title.scroll-effect{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+.team-title.scroll-effect.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .team-grid {
   display: grid;
@@ -2106,166 +2111,137 @@ html {
   border-radius: 8px;
 }
 .team-member h3 {
-  color: #7c3aed;
+  color: #3d0072;
   margin-top: 16px;
 }
 .team-member p {
-  color: #4b5563;
+  color: #3d0072;
   font-size: 0.95rem;
   max-width: 300px;
   margin: 0 auto;
 }
 
+.team-member.scroll-zoom{
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease-out;
+}
+
+.team-member.scroll-zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.team-grid .team-member:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.team-grid .team-member:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.team-grid .team-member:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+
 /* 💬 Testimonials */
+/* ✨ Testimonial Section */
 .testimonial-section {
   background-color: #3b0a75;
   color: white;
+  padding: 64px 16px;
 }
+
 .testimonial-wrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 32px;
   align-items: center;
-  gap: 40px;
 }
+
 .testimonial-card {
   background: white;
-  color: #3b0a75;
+  color: #3d0072;
   padding: 2rem;
-  border-radius: 12px;
-  position: relative;
-  max-width: 480px;
+  border-radius: 10px;
   text-align: center;
-  flex: 1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 480px;
+  width: 100%;
 }
+
 .testimonial-avatar {
   width: 80px;
   height: 80px;
-  object-fit: cover;
   border-radius: 50%;
-  border: 4px solid white;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
+  object-fit: cover;
+  margin-bottom: 16px;
 }
+
 .testimonial-quote {
-  margin-top: 60px;
   font-style: italic;
+  margin-top: 12px;
+  font-size: 1rem;
 }
+
 .testimonial-author {
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 16px;
+  font-size: 1.1rem;
 }
+
 .testimonial-role {
-  font-size: 0.85rem;
-  color: #555;
-}
-.testimonial-arrow {
-  position: absolute;
-  right: -16px;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  width: 32px;
-  height: 32px;
-  background: white;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-.testimonial-text {
-  flex: 1;
-}
-.testimonial-small {
   font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #e0e7ff;
+  color: #3d0072;
 }
+
+.testimonial-text {
+  text-align: center;
+  max-width: 480px;
+}
+
+.testimonial-small {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #3d0072;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 .testimonial-text h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 
-/*  Leadership Section */
-.leadership-section {
-  background: #f3f4f6;
-  padding: 64px 16px;
-}
-.leadership-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.leadership-card {
-  background: #3d0072;
-  color: white;
-  padding: 32px;
-  border-radius: 10px;
-  text-align: center;
-}
-.leadership-small {
-  font-size: 14px;
-  font-weight: 600;
-}
-.leadership-profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-top: 24px;
-}
-.leadership-profile img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.leadership-name {
-  font-weight: bold;
-}
-.leadership-title {
-  font-size: 0.9rem;
-  color: #ddd;
-}
-
-/*  Head of Design */
-.design-section {
-  padding: 64px 16px;
-}
-.design-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-}
-.card.purple {
-  background-color: #7c3aed;
-  color: white;
-  padding: 32px;
-  border-radius: 10px;
-}
-.design-small {
-  font-size: 14px;
-  font-weight: 600;
-}
-.design-muted {
-  color: #ddd;
-  margin-bottom: 1rem;
-}
-.design-image img {
-  max-width: 100%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 8px;
-}
 
 /* Responsive */
 @media (min-width: 768px) {
+
+  .team-hero {
+    height: 50vh;
+  }
+
+  .team-title{
+    font-size: 2rem;
+  }
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .testimonial-wrap {
+  . .testimonial-wrap {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .testimonial-card,
+  .testimonial-text {
+    flex: 1;
+  }
+
+  .testimonial-text {
+    text-align: left;
+    padding-left: 40px;
+  }
+  
   .design-wrap {
     flex-direction: row;
     align-items: center;
