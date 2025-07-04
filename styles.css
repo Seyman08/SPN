@@ -2094,35 +2094,41 @@ html {
   .Resources-section {
     flex-direction: column;
     padding: 40px 20px;
-    gap: 30px;
+    gap: 40px;
   }
 
   .resource-left,
   .resource-right {
-    padding: 20px 0;
-  }
-
-  .ebook-card {
     width: 100%;
-    max-width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
   }
 
   .resource-left h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .resource-left p,
   .resource-right p {
     font-size: 1rem;
+    line-height: 1.6;
   }
 
-  .primary-btn {
+  .resource-right h3 {
+    font-size: 1.3rem;
+  }
+
+  .resource-right button {
     width: 100%;
     text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
   }
 
   .ebook-icon {
     font-size: 30px;
+    margin-bottom: 10px;
   }
   /* SUPPORT & DONATE SECTION */
   .support-donate-section {
