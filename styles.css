@@ -2124,7 +2124,46 @@ html {
   .ebook-icon {
     font-size: 30px;
   }
+
+  /* SUPPORT & DONATE SECTION */
+  .support-donate-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .donate-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .donate-container {
+    padding: 20px;
+  }
+
+  .donate-card h3,
+  .donate-card p {
+    text-align: left;
+  }
+
+  .support-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .support-left h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .primary-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
+
+
 
 /* contact page */
 .contact-hero {
