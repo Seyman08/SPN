@@ -16,3 +16,4 @@ const observer = new IntersectionObserver(
   document.querySelectorAll(".scroll-effect, .scroll-left, .scroll-up, .scroll-zoom, .scroll-right").forEach((el) => {
     observer.observe(el);
 });
+
