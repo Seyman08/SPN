@@ -2124,27 +2124,24 @@ html {
   .ebook-icon {
     font-size: 30px;
   }
-
   /* SUPPORT & DONATE SECTION */
   .support-donate-section {
     flex-direction: column;
-    padding: 40px 20px;
-    gap: 40px;
+    padding: 30px 16px;
+    gap: 30px;
   }
 
   .donate-card {
     width: 100%;
     max-width: 100%;
-    padding: 30px 20px;
+    padding: 20px; 
+    box-sizing: border-box;
   }
 
   .donate-container {
     padding: 20px;
-  }
-
-  .donate-card h3,
-  .donate-card p {
-    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .support-left {
@@ -2154,7 +2151,6 @@ html {
 
   .support-left h1 {
     font-size: 2rem;
-    line-height: 1.4;
   }
 
   .primary-btn {
