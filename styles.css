@@ -2173,6 +2173,7 @@ html {
 
 /* contact page */
 
+/* === Base styles (Desktop default) === */
 .contact-hero {
   background-color: #3d0072;
   color: white;
@@ -2182,42 +2183,45 @@ html {
 
 .contact-hero-content {
   background-color: #f7f7f8;
-  padding: 150px 10px;
+  padding: 120px 40px;
   border-radius: 12px; 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contact-hero-content h1 {
   font-size: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #3d0072;
 }
 
 .contact-hero-content p {
-  font-size: 18px;
+  font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
   color: #3d0072;
-  line-height: 1.6; 
+  line-height: 1.6;
 }
 
+/* === Contact Icons (Desktop default) === */
 .contact-icon {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .contact-icon a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 32px;
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid #3d0072;
@@ -2231,37 +2235,67 @@ html {
   transform: scale(1.1);
 }
 
-@media (min-width: 768px) {
-  .contact-icon a {
-    width: 70px;
-    height: 70px;
-    font-size: 32px;
-  }
+/* === Tablet (max-width: 768px) === */
+@media (max-width: 768px) {
   .contact-hero-content {
-  background-color: #f7f7f8;
-  padding: 80px 20px;       /* Comfortable mobile spacing */
-  border-radius: 12px; 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
+    padding: 100px 30px;
+    max-width: 90%;
   }
+
   .contact-hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  color: #3d0072;
+    font-size: 2.3rem;
+  }
+
+  .contact-hero-content p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .contact-icon a {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
 }
 
-.contact-hero-content p {
-  font-size: 1rem;
-  max-width: 90%;
-  margin: 0 auto;
-  color: #3d0072;
-  line-height: 1.6;
+/* === Mobile (max-width: 600px) === */
+@media (max-width: 600px) {
+  .contact-hero-content {
+    padding: 80px 20px;
+  }
+
+  .contact-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .contact-icon a {
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+  }
 }
 
+/* === Extra small (max-width: 480px) === */
+@media (max-width: 480px) {
+  .contact-hero-content {
+    padding: 60px 15px;
+  }
 
+  .contact-icon a {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .contact-hero-content h1 {
+    font-size: 1.8rem;
+  }
 }
+
 /* CONTACT CARDS */
 /* .contact-cards {
   display: flex;
@@ -2474,15 +2508,12 @@ html {
   .mentors-images {
     justify-content: center;
   } */
-}
+/* } */
 
 
 /* === TEAM PAGE STYLES (RESPONSIVE) === */
 
-.page-container {
-  min-height: 100vh;
-  background-color: #ffffff;
-}
+
 
 /* Hero Section */
 .team-hero {
