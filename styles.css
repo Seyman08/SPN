@@ -2237,6 +2237,9 @@ html {
     height: 70px;
     font-size: 32px;
   }
+  .contact-hero-content {
+    padding: 150px 20px;
+  }
 }
 /* CONTACT CARDS */
 /* .contact-cards {
