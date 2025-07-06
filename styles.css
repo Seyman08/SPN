@@ -2173,7 +2173,6 @@ html {
 
 /* contact page */
 
-/* === Base styles (Desktop default) === */
 .contact-hero {
   background-color: #3d0072;
   color: white;
@@ -2205,7 +2204,6 @@ html {
   line-height: 1.6;
 }
 
-/* === Contact Icons (Desktop default) === */
 .contact-icon {
   display: flex;
   justify-content: center;
@@ -2235,7 +2233,6 @@ html {
   transform: scale(1.1);
 }
 
-/* === Tablet (max-width: 768px) === */
 @media (max-width: 768px) {
   .contact-hero-content {
     padding: 100px 30px;
@@ -2258,7 +2255,7 @@ html {
   }
 }
 
-/* === Mobile (max-width: 600px) === */
+
 @media (max-width: 600px) {
   .contact-hero-content {
     padding: 80px 20px;
@@ -2279,7 +2276,6 @@ html {
   }
 }
 
-/* === Extra small (max-width: 480px) === */
 @media (max-width: 480px) {
   .contact-hero-content {
     padding: 60px 15px;
