@@ -2443,6 +2443,7 @@ html {
   color: #3d0072;
   margin-bottom: 32px;
   text-align: center;
+  line-height: 1.6;
 }
 
 .team-description {
@@ -2669,7 +2670,6 @@ html {
   color: #f7f7f8;
 }
 
-/* Breakpoints */
 @media (min-width: 768px) {
   .team-hero {
     height: 40vh;
@@ -2682,6 +2682,7 @@ html {
   .team-title {
     font-size: 2.5rem;
     padding: 20px;
+    line-height: 1;
   }
 
   .team-description {
