@@ -2238,8 +2238,29 @@ html {
     font-size: 32px;
   }
   .contact-hero-content {
-    padding: 150px 20px;
+  background-color: #f7f7f8;
+  padding: 80px 20px;       /* Comfortable mobile spacing */
+  border-radius: 12px; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
   }
+  .contact-hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #3d0072;
+}
+
+.contact-hero-content p {
+  font-size: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+  color: #3d0072;
+  line-height: 1.6;
+}
+
+
 }
 /* CONTACT CARDS */
 /* .contact-cards {
