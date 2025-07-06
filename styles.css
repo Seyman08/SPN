@@ -2405,7 +2405,7 @@ html {
 }
 
 
-/* === TEAM PAGE STYLES === */
+/* === TEAM PAGE STYLES (RESPONSIVE) === */
 
 .page-container {
   min-height: 100vh;
@@ -2415,7 +2415,7 @@ html {
 /* Hero Section */
 .team-hero {
   background: url(/assets/images/TEAM/team-hero.jpg) center/cover no-repeat;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2428,61 +2428,70 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .team-hero h1 {
   position: relative;
-  font-size: 3rem;
+  font-size: 2rem;
   z-index: 1;
 }
 
-/*  Meet Our Team */
-
+/* Team Section */
 .team-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #3d0072;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
-.team-description{
+.team-description {
   color: #3d0072;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 48px;
+  max-width: 90%;
+  margin: 0 auto 32px;
   line-height: 1.6;
 }
 
-.team-title.scroll-effect, .team-description.scroll-effect {
+.team-title.scroll-effect,
+.team-description.scroll-effect {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s ease-out;
 }
-.team-title.scroll-effect.visible, .team-description.scroll-effect.visible {
+
+.team-title.scroll-effect.visible,
+.team-description.scroll-effect.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 .team-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
+  padding: 0 1rem;
 }
+
 .team-member {
   text-align: center;
 }
+
 .team-member img {
   width: 100%;
   max-width: 300px;
-  height: 300px;
-  object-fit: cover;
+  height: 300px;           
+  object-fit: cover;       
   border-radius: 8px;
 }
+
+
 .team-member h3 {
   color: #3d0072;
   margin-top: 16px;
 }
+
 .team-member p {
   color: #3d0072;
   font-size: 0.95rem;
@@ -2490,7 +2499,7 @@ html {
   margin: 0 auto;
 }
 
-.team-member.scroll-zoom{
+.team-member.scroll-zoom {
   opacity: 0;
   transform: scale(0.9);
   transition: all 0.6s ease-out;
@@ -2511,8 +2520,7 @@ html {
   transition-delay: 0.6s;
 }
 
-
-/* 💬 Testimonials */
+/* Testimonials */
 .testimonial-section {
   background-color: #3b0a75;
   color: white;
@@ -2521,10 +2529,10 @@ html {
 
 .testimonial-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
-  flex-direction: row; 
+  gap: 32px;
+  text-align: center;
 }
 
 .testimonial-card {
@@ -2564,7 +2572,6 @@ html {
 }
 
 .testimonial-text {
-  text-align: center;
   max-width: 480px;
 }
 
@@ -2577,64 +2584,17 @@ html {
 }
 
 .testimonial-text h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
 .page-container section + section {
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
-
-
-/* Responsive */
-@media (min-width: 768px) {
-
-  .team-hero {
-    height: 40vh;
-  }
-
-  .team-title{
-    font-size: 1.5rem;
-    align-items: center;
-  }
-  .team-description{
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto 32px;
-    line-height: 1.4;
-    text-align: left;
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-  }
-
-  .testimonial-wrap {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .testimonial-text {
-    order: -1; 
-    margin-bottom: 24px;
-  }
-
-  .testimonial-card {
-    order: 1;
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .page-container section + section {
-    margin-top: 30px;
-  }
-}
-
+/* Leadership Section */
 .leadership-section {
-  padding: 80px 16px;
+  padding: 64px 16px;
   background-color: #f9fafb;
 }
 
@@ -2645,28 +2605,23 @@ html {
 
 .leadership-content {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  overflow: hidden;
+  flex-direction: column;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
-/* Left Image Column */
 .leadership-image {
-  flex: 1;
   background-image: url("https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=600&h=800&fit=crop");
   background-size: cover;
   background-position: center;
-  min-height: 400px;
+  height: 300px;
 }
 
-/* Right Card Column */
 .leadership-card {
-  flex: 1;
   background-color: #3d0072;
   color: #f7f7f8;
-  padding: 48px 40px;
+  padding: 32px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2681,7 +2636,7 @@ html {
 }
 
 .leadership-card h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -2695,7 +2650,6 @@ html {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 20px;
 }
 
 .leadership-profile img {
@@ -2715,48 +2669,56 @@ html {
   color: #f7f7f8;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* Breakpoints */
+@media (min-width: 768px) {
+  .team-hero {
+    height: 40vh;
+  }
+
+  .team-hero h1 {
+    font-size: 3rem;
+  }
+
+  .team-title {
+    font-size: 2.5rem;
+  }
+
+  .team-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 48px;
+    text-align: left;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonial-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .testimonial-text h2 {
+    font-size: 1.8rem;
+  }
+
   .leadership-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .leadership-image {
-    height: 300px;
+    width: 50%;
+    height: auto;
   }
 
   .leadership-card {
-    padding: 32px 20px;
+    width: 50%;
+    padding: 48px 40px;
   }
 
   .leadership-card h2 {
-    font-size: 1.5rem;
-  }
-
-  .leadership-card p {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .leadership-card h2 {
-    font-size: 1.2rem;
-  }
-
-  .leadership-card p {
-    font-size: 0.9rem;
-  }
-
-  .leadership-profile img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .leadership-name {
-    font-size: 0.9rem;
-  }
-
-  .leadership-title {
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
 }
