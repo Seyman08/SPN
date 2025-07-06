@@ -2595,11 +2595,11 @@ html {
   }
 
   .team-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center;
   }
   .team-description{
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 700px;
     margin: 0 auto 32px;
     line-height: 1.4;
