@@ -30,7 +30,7 @@ function payWithPaystack() {
   const reference = '' + Math.floor(Math.random() * 1000000000);
 
   const handler = PaystackPop.setup({
-    key: 'pk_test_xxxxxxxxxxxxxxxxxxxxx', // Replace with your public key
+    key: 'pk_test_779e83165887a75367a004a31183946cf6d24301', // Replace with your public key
     email: email,
     amount: parseInt(amount) * 100,
     currency: "NGN",
