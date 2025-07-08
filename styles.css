@@ -1539,6 +1539,26 @@ html {
   color: white;
 }
 
+/* mentorship resources */
+.resource-promo {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 1rem;
+  color: #3d0072;
+}
+
+.resource-promo a {
+  color: #3d0072;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.resource-promo a:hover {
+  color: #26004d;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .mentorship-hero {
@@ -1607,6 +1627,11 @@ html {
   .submit-btn {
     width: 100%;
     text-align: center;
+  }
+
+  .mentorship-resources{
+    text-align: center;
+    margin: 2rem 0;
   }
 }
 
