@@ -2005,7 +2005,6 @@ html {
 
 .donate-card {
   flex: 1;
-  max-width: 500px;
   background: #f7f7f8;
   padding: 40px 80px 40px 30px;
   border-radius: 16px;
@@ -2086,6 +2085,110 @@ html {
   transform: translateY(0);
 }
 
+.support-intro {
+  background-color: #3d0072;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #f7f7f8;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.container p {
+  font-size: 1.1rem;
+  color: #f7f7f8;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.donate-scroll-btn {
+  background-color: #f7f7f8;
+  color: #3d0072;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.donate-scroll-btn:hover {
+  background-color: #250046;
+  color: #f7f7f8;
+  text-decoration: none;
+}
+
+.donation-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.donate-seccard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.donate-seccard.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.donate-seccard h2 {
+  color: #3d0072;
+  margin-bottom: 10px;
+}
+
+.donate-seccard p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.paystack-button {
+  background-color: #3d0072;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.paystack-button:hover {
+  background-color: #26004d;
+}
+
+/* support&donate style */
+@media (max-width: 768px) {
+  .support-intro h1 {
+  font-size: 2rem;
+  }
+
+  .support-intro p {
+  font-size: 1rem;
+  }
+
+  .donate-card {
+  padding: 30px 20px;
+  }
+}
+
+/* counselling style */
 @media (max-width: 768px) {
   /* HERO */
   .counseling-hero {
@@ -2211,6 +2314,7 @@ html {
     font-size: 30px;
     margin-bottom: 10px;
   }
+
   /* SUPPORT & DONATE SECTION */
   .support-donate-section {
     flex-direction: column;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support&Donate</title>
+  <link rel="stylesheet" href="/styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+        <div class="container nav-container">
+            <!--left logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/sexual-purity-logo.jpg" alt="sexual purity netwok logo">
+                </a>
+            </div>
+
+            
+            <!-- Hamburger Toggle -->
+            <input type="checkbox" id="menu-toggle" />
+            <label class="hamburger" for="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Center: Menu -->
+            <nav class="center-nav" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Program <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="CounselingSupport.html">Counseling Support</a></li>
+                            <li><a href="MentorshipProgram.html">Mentorship Program</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#">More <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="LearningPortal/login.html">Learning Portal</a></li>
+                            <li><a href="OurTeam.html">Team</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Events & Outreach</a></li>
+                            <li><a href="#">Blogs / Resources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Right: Button -->
+            <div class="nav-btn">
+                <a href="#" class="btn get-started">Get Started</a>
+            </div>
+     </div>
+ </header>
+
+  <!-- 💳 Donate Page with Email & Amount -->
+    <section class="support-intro">
+        <div class="container">
+            <h1>Your Support Makes a Difference</h1>
+            <p>
+                Every donation goes directly into our mentorship programs, outreach events like “Feed the Streets,”
+                and resources that help young people stay on the path of sexual purity.
+            </p>
+            <p>
+                When you give, you're not just donating, you're empowering lives, funding counseling, and building
+                a community that champions sexual integrity.
+            </p>
+            <a href="#donate" class="donate-scroll-btn">Give Your Support</a>
+        </div>
+    </section>
+
+    <!--  Donation Form Section -->
+    <section class="donation-section" id="donate">
+        <div class="donate-seccard animate">
+            <h2>Make a Donation</h2>
+            <p>Use the form below to donate securely via Paystack.</p>
+
+            <input type="email" id="donorEmail" placeholder="Enter your email" required style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" />
+
+            <input type="number" id="donationAmount" placeholder="Enter amount (₦)" required style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" />
+
+            <button class="paystack-button" onclick="payWithPaystack()">Donate Now</button>
+        </div>
+    </section>
+
+    <!-- ✉️ Newsletter Call-to-Action -->
+    <section class="newsletter-section">
+        <div class="newsletter-left">
+            <h2><span>Stay Connected</span></h2>
+            <p>
+                Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
+            </p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="newsletter-right">
+            <img src="/assets/images/footer.jpeg" alt="Newsletter visual" />
+        </div>
+    </section>
+
+    <!--  Main Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© Sexual Purity Network 2025</p>
+
+            <div class="footer-buttons">
+                <a href="#" class="footer-btn">Join Our Community</a>
+                <a href="#" class="footer-btn">Volunteer with Us</a>
+                <a href="Contact.html" class="footer-btn">Request Help</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js" defer></script>
+</body>

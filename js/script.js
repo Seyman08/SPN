@@ -1,10 +1,10 @@
 
-const observer = new IntersectionObserver(
+const scrollObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // only animate once
+          scrollObserver.unobserve(entry.target); // only animate once
         }
       });
     },
@@ -14,6 +14,58 @@ const observer = new IntersectionObserver(
   );
 
   document.querySelectorAll(".scroll-effect, .scroll-left, .scroll-up, .scroll-zoom, .scroll-right").forEach((el) => {
-    observer.observe(el);
+    scrollObserver.observe(el);
 });
 
+
+function payWithPaystack() {
+  const email = document.getElementById('donorEmail').value;
+  const amount = document.getElementById('donationAmount').value;
+
+  if (!email || !amount) {
+    alert('Please enter both your email and donation amount.');
+    return;
+  }
+
+  const reference = '' + Math.floor(Math.random() * 1000000000);
+
+  const handler = PaystackPop.setup({
+    key: 'pk_test_xxxxxxxxxxxxxxxxxxxxx', // Replace with your public key
+    email: email,
+    amount: parseInt(amount) * 100,
+    currency: "NGN",
+    ref: reference,
+    callback: function (response) {
+      alert('Thank you for donating! A confirmation email has been sent.\nTransaction reference: ' + response.reference);
+
+      fetch('/send-receipt', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          amount: amount,
+          reference: response.reference,
+          date: new Date().toLocaleString()
+        })
+      });
+    },
+    onClose: function () {
+      alert('You closed the donation window.');
+    }
+  });
+
+  handler.openIframe();
+}
+
+// Scroll Animation for Donate Card
+const donateCardObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.animate').forEach(card => {
+  donateCardObserver.observe(card);
+});
