@@ -1,21 +1,21 @@
 
-const scrollObserver = new IntersectionObserver(
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          scrollObserver.unobserve(entry.target); // only animate once
+          scrollObserver.unobserve(entry.target);
         }
       });
     },
-    {
-      threshold: 0.2,
-    }
+    { threshold: 0.2 }
   );
 
-  document.querySelectorAll(".scroll-effect, .scroll-left, .scroll-up, .scroll-zoom, .scroll-right").forEach((el) => {
-    scrollObserver.observe(el);
+  document.querySelectorAll(".scroll-effect, .scroll-left, .scroll-up, .scroll-zoom, .scroll-right")
+    .forEach((el) => scrollObserver.observe(el));
 });
+
 
 
 function payWithPaystack() {

@@ -883,6 +883,12 @@ body, html {
   text-align: center;
 }
 
+.about-hero h1.scroll-effect.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}
+
 .about-intro-section {
   padding: 80px 60px;
   background-color:#f7f7f8;
@@ -913,6 +919,7 @@ body, html {
   font-weight: 400;
   color: #3d0072;
 }
+
 
 .about-subsection h3 {
   font-size: 1.2rem;
@@ -1035,8 +1042,8 @@ body, html {
 
 .milestones-section {
   padding: 60px 20px;
-  background: #fff;
-  margin: 50px 5opx;
+  background: #f7f7f8;
+  margin: 50px 50px;
 }
 
 .section-title {
@@ -1065,6 +1072,7 @@ body, html {
 .milestones-left p {
   margin-bottom: 16px;
   font-size: 16px;
+  font-weight: 400;
   color: #3d0072;
   line-height: 1.4;
 }
@@ -1214,6 +1222,8 @@ body, html {
 
   .milestones-left p {
     font-size: 16px;
+    color: #3d0072;
+    line-height: 1.4;
   }
 
   .card {
@@ -2116,14 +2126,14 @@ html {
   padding: 60px 20px;
 }
 
-.container h1 {
+.container-support h1 {
   font-size: 2.5rem;
   color: #f7f7f8;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-.container p {
+.container-support p {
   font-size: 1.1rem;
   color: #f7f7f8;
   max-width: 700px;
