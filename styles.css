@@ -579,7 +579,7 @@ body, html {
   border: none;
   border-bottom: 2px solid #3d0072;
   flex: 1 1 200px;
-  min-width: 200px;
+  min-width: 0;
   background: white;
 }
 
@@ -834,24 +834,24 @@ body, html {
   }
 
   .newsletter-form {
-    flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 100%;
+    padding: 0 10px; 
+    box-sizing: border-box;
   }
 
-  .newsletter-form input,
+  .newsletter-form input[type="email"],
   .newsletter-form button {
     width: 100%;
+    max-width: 100%;
+    min-width: 0   
+    box-sizing: border-box;
   }
 
-  .footer-btn {
-    display: block;
-    margin: 10px auto;
-  }
-
-  .social-links {
-    gap: 10px;
-    margin-top: 10px;
+  .newsletter-form input[type="email"] {
+    margin-bottom: 10px;
+    padding: 12px;
   }
 }
 
