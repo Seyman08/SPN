@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
     .forEach((el) => scrollObserver.observe(el));
 });
 
+// Carousel functionality for leadership images
+const slides = document.querySelectorAll(".carousel-slide");
+let index = 0;
+
+setInterval(() => {
+ slides[index].classList.remove("active");
+ index = (index + 1) % slides.length;
+ slides[index].classList.add("active");
+}, 3000); // change every 3 seconds
+
 
 
 function payWithPaystack() {

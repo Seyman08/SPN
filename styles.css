@@ -533,6 +533,89 @@ body, html {
   overflow-x: hidden;
 }
 
+/* events&outreach styles */
+
+.events-section {
+  background-color: #f7f7f8;
+  padding: 64px 16px;
+  color: #3d0072;
+}
+
+.events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.events-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.events-header p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.events-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.event-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.event-img-wrap img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.event-img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(61, 0, 114, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.event-img-wrap:hover img {
+  transform: scale(1.05);
+}
+
+.event-img-wrap:hover::after {
+  opacity: 1;
+}
+
+.events-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
 /*  Newsletter Section */
 .newsletter-section {
   display: flex;
@@ -828,6 +911,19 @@ body, html {
     padding: 40px 20px;
   }
 
+  
+  .events-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-header h2 {
+    font-size: 2rem;
+  }
+
   .newsletter-left {
     padding-right: 0;
     margin-bottom: 30px;
@@ -845,7 +941,7 @@ body, html {
   .newsletter-form button {
     width: 100%;
     max-width: 100%;
-    min-width: 0   
+    min-width: 0;   
     box-sizing: border-box;
   }
 
@@ -2725,8 +2821,6 @@ html {
 
 /* === TEAM PAGE STYLES (RESPONSIVE) === */
 
-
-
 /* Hero Section */
 .team-hero {
   background: url(/assets/images/TEAM/team-hero.jpg) center/cover no-repeat;
@@ -2785,21 +2879,26 @@ html {
 
 .team-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 20px;
   padding: 0 1rem;
-}
-
-.team-member {
-  text-align: center;
+  justify-items: center;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
 .team-member img {
   width: 100%;
   max-width: 300px;
-  height: 300px;           
-  object-fit: cover;       
+  height: 300px;
+  object-fit: cover; 
+  object-position: top; 
   border-radius: 8px;
+  
+}
+
+.team-member {
+  text-align: center;
 }
 
 
@@ -2837,7 +2936,7 @@ html {
 }
 
 /* Testimonials */
-.testimonial-section {
+/* .testimonial-section {
   background-color: #3b0a75;
   color: white;
   padding: 64px 16px;
@@ -2906,7 +3005,7 @@ html {
 
 .page-container section + section {
   margin-top: 48px;
-}
+} */
 
 /* Leadership Section */
 .leadership-section {
@@ -2921,17 +3020,20 @@ html {
 
 .leadership-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  width: 100%;
+  height: 500px;
 }
 
-.leadership-image {
-  background-image: url("https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=600&h=800&fit=crop");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+.leadership-card,
+.leadership-carousel {
+  flex: 1;
+  min-width: 0;
 }
 
 .leadership-card {
@@ -2946,7 +3048,6 @@ html {
 .leadership-small {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #f7f7f8;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -2982,60 +3083,153 @@ html {
 
 .leadership-title {
   font-size: 0.9rem;
-  color: #f7f7f8;
 }
 
-@media (min-width: 768px) {
-  .team-hero {
-    height: 40vh;
+/* Carousel styles */
+.leadership-carousel {
+  position: relative;
+  min-height: 300px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid #3d0072;
+  border-radius: 0;
+}
+
+.carousel-caption {
+  background: rgba(61, 0, 114, 0.8);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-top: 12px;
+  max-width: 90%;
+}
+
+.carousel-caption h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.carousel-caption p {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  .leadership-content {
+    flex-direction: column;
   }
 
-  .team-hero h1 {
-    font-size: 3rem;
+  .leadership-carousel {
+    height: 300px;
   }
+}
 
+/* === Responsive: Team Section === */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
   .team-title {
-    font-size: 2.5rem;
-    padding: 20px;
-    line-height: 1;
+    font-size: 1.4rem;
+    padding: 0 1rem;
   }
 
   .team-description {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 48px;
-    text-align: left;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   .team-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0;
   }
 
-  .testimonial-wrap {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .testimonial-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .leadership-content {
-    flex-direction: row;
-  }
-
-  .leadership-image {
-    width: 50%;
+  .team-member img {
+    max-width: 90%;
     height: auto;
   }
 
+  .team-member h3,
+  .team-member p {
+    padding: 0 1rem;
+  }
+}
+
+
+/* === Responsive: Leadership Section === */
+@media (max-width: 1024px) {
+  .leadership-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leadership-carousel {
+    height: 300px;
+  }
+
+  .carousel-slide img {
+    height: auto;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
   .leadership-card {
-    width: 50%;
-    padding: 48px 40px;
+    padding: 24px;
   }
 
   .leadership-card h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .leadership-card p {
+    font-size: 0.95rem;
+  }
+
+  .carousel-caption {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.85rem;
   }
 }
