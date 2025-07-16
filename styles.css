@@ -1088,10 +1088,8 @@ body, html {
   border-radius: 8px;
 }
 
-
-
 .about-spn-definition {
-  background-color: #f9f9f9;
+  background-color: #3d0072;
   padding: 4rem 1rem;
 }
 
@@ -1110,14 +1108,14 @@ body, html {
 
 .spn-definition-text h2 {
   font-size: 65px;
-  color: #4b0082;
+  color: #f7f7f8;
   font-weight: 500;
   line-height: 1;
   margin-bottom: 1rem;
 }
 
 .spn-definition-text p {
-  color: #3d0072;
+  color: #f7f7f8;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -1148,114 +1146,83 @@ body, html {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
-  position: relative;
 }
-
 
 .milestones-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .milestones-left {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
+  flex: 1 1 500px;
   text-align: left;
 }
 
 .milestones-left p {
-  margin-bottom: 16px;
   font-size: 16px;
   font-weight: 400;
   color: #3d0072;
-  line-height: 1.4;
-  
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.profile {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+.milestones-list {
+  padding-left: 20px;
+  color: #3d0072;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.profile img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.name {
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.role {
-  font-size: 11px;
-  color: #f7f7f8;
-}
-
-.milestones-right {
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  background-color: #3d0072;
-  color: #f7f7f8;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card p {
-  font-size: 18px;
+.milestones-list li {
   margin-bottom: 12px;
+  list-style-type: disc;
 }
 
-.card-profile .card-role{
-  font-size: 13px;
-}
-.card-profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.milestones-conclusion {
+  color: #3d0072;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
-.card-profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.milestones-image {
+  flex: 1 1 400px;
+  text-align: center;
 }
 
-.scroll-effect{
+.milestones-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Scroll Animation */
+.scroll-fade {
   opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.6s ease-out;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
 
-.card.scroll-zoom.visible {
+.scroll-fade.visible {
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(0);
 }
 
-.milestones-right .card:nth-child(1) {
-  transition-delay: 0.2s;
+/* Fade-in Animation */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
-.milestones-right .card:nth-child(2) {
-  transition-delay: 0.4s;
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-.milestones-right .card:nth-child(3) {
-  transition-delay: 0.6s;
-}
+
 
 @media (max-width: 768px) {
   .about-hero {
@@ -1309,54 +1276,12 @@ body, html {
 
   .milestones-grid {
     flex-direction: column;
-    gap: 30px;
   }
 
-  .milestones-left,
-  .milestones-right {
-    max-width: 100%;
-    padding: 0;
+  .milestones-image {
+    margin-top: 30px;
   }
 
-  .milestones-left {
-    text-align: left;
-  }
-
-  .milestones-left p {
-    font-size: 16px;
-    color: #3d0072;
-    line-height: 1.4;
-  }
-
-  .card {
-    padding: 16px;
-  }
-
-  .card p {
-    font-size: 16px;
-  }
-
-  .milestones-right {
-    padding: 0;
-  }
-
-  .section-title {
-    font-size: 20px;
-  }
-
-  .profile img,
-  .card-profile img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .name {
-    font-size: 11px;
-  }
-
-  .role, .card-role {
-    font-size: 10px;
-  }
 }
 
 @media (max-width: 480px) {

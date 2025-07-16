@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     { threshold: 0.2 }
   );
 
-  document.querySelectorAll(".scroll-effect, .scroll-left, .scroll-up, .scroll-zoom, .scroll-right")
+  document.querySelectorAll(".scroll-effect, .scroll-left, .scroll-up, .scroll-zoom, .scroll-right , .scroll-fade")
     .forEach((el) => scrollObserver.observe(el));
 });
 
