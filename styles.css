@@ -456,6 +456,7 @@ a {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .testimonial-card.scroll-zoom {
@@ -494,6 +495,7 @@ a {
   margin-bottom: 20px;
   position: relative;
   line-height: 1.6;
+  text-align: center;
 }
 
 .testimonial-card .quote::before {
@@ -505,11 +507,9 @@ a {
   color: #fff;
 }
 
-.testimonial-card .avatar {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
+.testimonial-card .avatar-icon {
+  font-size: 80px;
+  color: #fff;
   margin: 15px 0;
 }
 
@@ -522,6 +522,7 @@ a {
   font-size: 0.8rem;
   color: #f7f7f8;
 }
+
 
 
 * {
