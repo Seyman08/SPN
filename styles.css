@@ -1280,15 +1280,21 @@ body, html {
     font-size: 1.5rem;
   }
 
+  @media (max-width: 768px) {
   .milestones-grid {
     flex-direction: column;
     gap: 20px;
-    align-items: left;
+    align-items: stretch;
+    text-align: left;
   }
 
   .milestones-left {
-    text-align: left;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .section-title {
+    text-align: center;
   }
 
   .milestones-left p,
@@ -1298,24 +1304,34 @@ body, html {
   }
 
   .milestones-list {
-    padding-left: 0;
+    padding-left: 20px;
+    margin: 0;
+    text-align: left;
   }
 
   .milestones-list li {
-    list-style-position: inside;
+    list-style-position: outside;
+    margin-bottom: 10px;
   }
 
   .milestones-image {
-    width: 90%;
-    margin-top:10px;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
   }
 
   .milestones-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   }
 }
+
 
 @media (max-width: 480px) {
   .about-hero h1 {
