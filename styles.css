@@ -1274,14 +1274,45 @@ body, html {
     font-size: 14px;
   }
 
+  .section-title {
+    font-size: 1.5rem;
+  }
+
   .milestones-grid {
     flex-direction: column;
+    gap: 20px;
+    align-items: left;
+  }
+
+  .milestones-left {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .milestones-left p,
+  .milestones-list,
+  .milestones-conclusion {
+    text-align: left;
+  }
+
+  .milestones-list {
+    padding-left: 0;
+  }
+
+  .milestones-list li {
+    list-style-position: inside;
   }
 
   .milestones-image {
-    margin-top: 30px;
+    width: 90%;
+    margin-top:10px;
   }
 
+  .milestones-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  }
 }
 
 @media (max-width: 480px) {
