@@ -1097,7 +1097,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1264,6 +1264,7 @@ body, html {
   .spn-definition-grid {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .spn-definition-text h2 {
