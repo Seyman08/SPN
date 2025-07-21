@@ -418,18 +418,10 @@ a {
   font-size: 1rem;
 }
 
-.vision-content .learn-more-btn {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-}
-
-.vision-content .learn-more-btn:hover {
-  opacity: 0.8;
+.vision-content p span {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .success-stories {
@@ -746,15 +738,24 @@ body, html {
 }
 
 .social-links a {
-  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f7f7f8; 
+  color: #3d0072;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: white;
+  background-color: #3d0072;
+  color: lightblue; 
 }
+
 
 
 @media (max-width: 768px) {
@@ -1280,55 +1281,18 @@ body, html {
     font-size: 1.5rem;
   }
 
-  @media (max-width: 768px) {
-  .milestones-grid {
-    flex-direction: column;
-    gap: 20px;
-    align-items: stretch;
-    text-align: left;
-  }
-
-  .milestones-left {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .section-title {
-    text-align: center;
-  }
-
-  .milestones-left p,
-  .milestones-list,
-  .milestones-conclusion {
-    text-align: left;
-  }
-
-  .milestones-list {
-    padding-left: 20px;
-    margin: 0;
-    text-align: left;
-  }
-
-  .milestones-list li {
-    list-style-position: outside;
-    margin-bottom: 10px;
-  }
-
   .milestones-image {
-    width: 100%;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-  }
+  width: 100%;
+  margin: 0; 
+  padding: 0; 
 
   .milestones-image img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 70vw; 
+    margin: 0;
+    border-radius: 0; 
+    max-width: none; 
+    box-shadow: none; 
+    display: block;
   }
 }
 
