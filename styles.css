@@ -872,6 +872,9 @@ body, html {
     font-size: 0.95rem;
   }
 
+  .vision-content p span {
+    font-size: 1.5rem;
+  }
   .vision-content .learn-more-btn {
     font-size: 0.95rem;
   }
