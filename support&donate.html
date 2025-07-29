@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support&Donate</title>
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 
   <link
     rel="stylesheet"
@@ -81,29 +81,47 @@
         </div>
     </section>
 
-    <!--  Donation Form Section -->
+   <!--  Donation Form Section -->
     <section class="donation-section" id="donate">
         <div class="donate-seccard animate">
             <h2>Make a Donation</h2>
             <p>Use the form below to donate securely via Paystack.</p>
 
-            <input type="email" id="donorEmail" placeholder="Enter your email" required style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" />
+            <form id="donationForm" method="POST" action="/api/donate">
+                <input
+                    type="email"
+                    id="donorEmail"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"
+                />
 
-            <input type="number" id="donationAmount" placeholder="Enter amount (₦)" required style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;" />
+                <input
+                    type="number"
+                    id="donationAmount"
+                    name="amount"
+                    placeholder="Enter amount (₦)"
+                    required
+                    style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"
+                />
 
-            <button class="paystack-button" onclick="payWithPaystack()">Donate Now</button>
+                <button type="button" class="paystack-button" onclick="payWithPaystack()">Donate Now</button>
+            </form>
         </div>
     </section>
 
-    <!-- ✉️ Newsletter Call-to-Action -->
+
+    <!-- Newsletter Call-to-Action -->
     <section class="newsletter-section">
         <div class="newsletter-left">
             <h2><span>Stay Connected</span></h2>
             <p>
-                Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
+             Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
             </p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required />
+
+            <form class="newsletter-form" method="POST" action="/api/newsletter">
+                <input type="email" name="email" placeholder="Your email address" required />
                 <button type="submit">Subscribe Now</button>
             </form>
         </div>

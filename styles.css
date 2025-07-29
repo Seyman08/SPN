@@ -1285,9 +1285,10 @@ body, html {
   }
 
   .milestones-image {
-  width: 100%;
-  margin: 0; 
-  padding: 0; 
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+  }
 
   .milestones-image img {
     width: 70vw; 
@@ -1318,8 +1319,8 @@ body, html {
 
 /* HERO */
 .mentorship-hero {
-  background: url('/assets/images/Event outreach 4.jpg') no-repeat center center / cover;
-  height: 90vh;
+  background: url('/assets/images/Event outreach 5.jpg') no-repeat center center / cover;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1347,7 +1348,7 @@ body, html {
   padding: 10px 20px;
   background: transparent;
   border: 2px solid white;
-  color: white;
+  color: #3d0072;
   font-weight: bold;
   cursor: pointer;
 }
@@ -1359,20 +1360,20 @@ body, html {
 }
 
 /* GENERAL SECTIONS */
-.section {
+.section-overview {
   padding: 4rem 1rem;
   max-width: 1200px;
   margin: auto;
 }
 
-.section h2 {
+.section-overview h2 {
   color: #3d0072;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.section h4 {
+.section-overview h4 {
   text-align: center;
   font-size: 0.9rem;
   color: #3d0072;
@@ -1380,7 +1381,7 @@ body, html {
   letter-spacing: 1px;
 }
 
-.section p {
+.section-overview p {
   color: #3d0072;
   font-size: 1rem;
   text-align: center;
@@ -1410,6 +1411,7 @@ body, html {
   margin-top: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+ 
 }
 
 .getting-text h2{
@@ -1424,6 +1426,7 @@ body, html {
   text-align: left;
   margin-bottom: 16px;
   line-height: 1.8;
+  color: #3d0072;
 }
 
 .getting-text,
@@ -1613,6 +1616,8 @@ html {
 
 
 /* RESPONSIVE */
+
+
 @media (max-width: 768px) {
   .mentorship-hero {
     height: 50vh;
@@ -1742,7 +1747,7 @@ html {
 
 .counseling-hero {
   background: url('/assets/images/Event outreach.jpg') center/cover no-repeat;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3174,3 +3179,4 @@ html {
     font-size: 0.85rem;
   }
 }
+

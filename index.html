@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOME</title>
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 
   <link
     rel="stylesheet"
@@ -232,15 +232,16 @@
         
     
 
-    <!-- ✉️ Newsletter Call-to-Action -->
+    <!-- Newsletter Call-to-Action -->
     <section class="newsletter-section">
         <div class="newsletter-left">
             <h2><span>Stay Connected</span></h2>
             <p>
-                Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
+             Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
             </p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required />
+
+            <form class="newsletter-form" method="POST" action="/api/newsletter">
+                <input type="email" name="email" placeholder="Your email address" required />
                 <button type="submit">Subscribe Now</button>
             </form>
         </div>

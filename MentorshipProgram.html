@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mentorship Program</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <!-- 🧭 Navigation Bar -->
@@ -68,7 +68,7 @@
     </section>
 
     <!-- SECTION 2: PROGRAM OVERVIEW -->
-    <section class="section overview scroll-up">
+    <section class="section-overview scroll-up">
         <h4>SEXUAL PURITY NETWORK</h4>
         <h2>Grow With Guidance</h2>
         <p>Our mentorship program connects you with experienced mentors who will walk with you on your 
@@ -111,74 +111,115 @@
 
     <!-- SECTION 5: FORM -->
     <section id="mentorship-form" class="form-section">
-        <div class="form-column scroll-up">
+        <!-- Mentor Form -->
+        <form
+            class="form-column scroll-up"
+            id="mentorForm"
+            method="POST"
+            action="/submit-mentor"
+         >
             <h3>Apply As A Mentor</h3>
-            <div class="form-group">
-                <label>Full Name *</label>
-                <input type="text" />
-            </div>
-            <div class="form-group">
-                <label>Email *</label>
-                <input type="email" />
-            </div>
-            <div class="form-group">
-                <label>Age Group *</label>
-                <select>
-                    <option>13-17</option>
-                    <option>18-25</option>
-                    <option>26-35</option>
-                    <option>36+</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Phone Number *</label>
-                <input type="text" placeholder="+234 (include your country code)" />
-            </div>
-            <div class="form-group">
-                <label>Gender *</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="mentor-gender" /> Male</label>
-                    <label><input type="radio" name="mentor-gender" /> Female</label>
-                </div>
-            </div>
-            
-            <button class="submit-btn">APPLY AS A MENTOR  <i class="fa-solid fa-paper-plane"></i></button>
-        </div>
 
-        <div class="form-column">
-            <h3>Apply As A Mentee</h3>
             <div class="form-group">
-                <label>Full Name *</label>
-                <input type="text" />
+                <label for="mentorFullName">Full Name *</label>
+                <input type="text" name="fullName" id="mentorFullName" required />
             </div>
+
             <div class="form-group">
-                <label>Email *</label>
-                <input type="email" />
+                <label for="mentorEmail">Email *</label>
+                <input type="email" name="email" id="mentorEmail" required />
             </div>
+
             <div class="form-group">
-                <label>Age Group *</label>
-                <select>
+                <label for="mentorAgeGroup">Age Group *</label>
+                <select name="ageGroup" id="mentorAgeGroup" required>
+                    <option value="">-- Select Age Group --</option>
                     <option>13-17</option>
                     <option>18-25</option>
                     <option>26-35</option>
                     <option>36+</option>
                 </select>
             </div>
+
             <div class="form-group">
-                <label>Phone Number *</label>
-                <input type="text" placeholder="+234 (include your country code)" />
+                <label for="mentorPhone">Phone Number *</label>
+                <input
+                    type="tel"
+                    name="phone"
+                    id="mentorPhone"
+                    placeholder="+234 (include your country code)"
+                    required
+                />
             </div>
+
             <div class="form-group">
                 <label>Gender *</label>
                 <div class="radio-group">
-                    <label><input type="radio" name="mentee-gender" /> Male</label>
-                    <label><input type="radio" name="mentee-gender" /> Female</label>
+                    <label><input type="radio" name="gender" value="Male" required /> Male</label>
+                    <label><input type="radio" name="gender" value="Female" required /> Female</label>
                 </div>
             </div>
-           
-            <button class="submit-btn">APPLY AS A MENTEE  <i class="fa-solid fa-paper-plane"></i></button>
-        </div>
+
+            <button type="submit" class="submit-btn">
+                APPLY AS A MENTOR <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+
+        <!-- Mentee Form -->
+        <form
+            class="form-column"
+            id="menteeForm"
+            method="POST"
+            action="/submit-mentee"
+         >
+            <h3>Apply As A Mentee</h3>
+
+            <div class="form-group">
+                <label for="menteeFullName">Full Name *</label>
+                <input type="text" name="fullName" id="menteeFullName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="menteeEmail">Email *</label>
+                <input type="email" name="email" id="menteeEmail" required />
+            </div>
+
+            <div class="form-group">
+                <label for="menteeAgeGroup">Age Group *</label>
+                <select name="ageGroup" id="menteeAgeGroup" required>
+                    <option value="">-- Select Age Group --</option>
+                    <option>13-17</option>
+                    <option>18-25</option>
+                    <option>26-35</option>
+                    <option>36+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="menteePhone">Phone Number *</label>
+                <input
+                    type="tel"
+                    name="phone"
+                    id="menteePhone"
+                    placeholder="+234 (include your country code)"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male" required /> Male</label>
+                    <label><input type="radio" name="gender" value="Female" required /> Female</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                APPLY AS A MENTEE <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
     </section>
+
     <!-- SECTION 6: MENTORSHIP RESOURCES -->
     <section class="mentorship-resources">
         <div class="resource-promo">
@@ -186,7 +227,7 @@
                 Check out our mentorship resources
                 <a href="/assets/resources/mentorship-guide.pdf" target="_blank" download>
                     here
-                </a>.
+                </a>
             </p>
         </div>
     </section>
@@ -197,10 +238,11 @@
         <div class="newsletter-left">
             <h2><span>Stay Connected</span></h2>
             <p>
-                Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
+             Subscribe to our newsletter for monthly insights, free resources, and updates on our mentorship programs and events.
             </p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" required />
+
+            <form class="newsletter-form" method="POST" action="/api/newsletter">
+                <input type="email" name="email" placeholder="Your email address" required />
                 <button type="submit">Subscribe Now</button>
             </form>
         </div>
@@ -208,6 +250,7 @@
             <img src="/assets/images/Event outreach 5.jpg" alt="Newsletter visual" />
         </div>
     </section>
+
 
     <!--  Main Footer -->
     <footer class="main-footer">
